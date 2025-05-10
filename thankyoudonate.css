@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('DEV\ LIBRARY.png'); /* Background image same as before */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keep background static */
+    color: #ffffff;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.content {
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #FFD700; /* Gold color for the title */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #e0e0e0; /* Light gray for the text */
+}
+
+.go-back-button {
+    padding: 12px 0;
+    background-color: #70492a;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.go-back-button:hover {
+    background-color: #472C1E;
+}

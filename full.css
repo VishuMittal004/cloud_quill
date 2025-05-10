@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-logo-img {
+    max-height: 40px; 
+    max-width: 130px; 
+    object-fit: contain; 
+    display: block; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('DEV\ LIBRARY.png') no-repeat center center; 
+    background-size: cover;
+    color: #ffffff;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #9f7966;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+.nav-search button {
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #70492a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-search button:hover {
+    background-color: #472C1E;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px; 
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    max-width: 600px;
+    color: #ffffff;
+}
+.trending-section {
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.trending-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.trending-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.trending-item {
+    width: 150px;
+    text-align: center;
+}
+
+.book-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.book-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.book-image:hover img {
+    transform: scale(1.05); 
+}
+
+.trending-item p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.genres-section {
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.genres-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.genres-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.genres-list li {
+    font-size: 1em;
+    padding: 10px 15px;
+    background-color: #70492a;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.genres-list li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.genres-list li:hover {
+    background-color: #472C1E;
+}
+
+.featured-authors {
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.featured-authors h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.author-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.author-item {
+    width: 150px;
+    text-align: center;
+}
+
+.author-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.author-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.author-image:hover img {
+    transform: scale(1.05); 
+}
+
+.author-item p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.donate-books {
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.donate-books h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.donate-books p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.donate-books button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #70492a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donate-books button:hover {
+    background-color: #472C1E;
+}
+.customer-reviews {
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.customer-reviews h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.review-item {
+    width: 200px;
+    text-align: center;
+}
+
+.review-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.review-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.review-image:hover img {
+    transform: scale(1.05);
+}
+
+.review-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #ddd;
+}
+
+.footer {
+    background-color: #222;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.footer .social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer .social-icons a:hover {
+    transform: scale(1.1); 
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+@keyframes slideRightToLeft {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%); 
+        opacity: 0;
+    }
+}
+
+.trending-item {
+    opacity: 0;
+    animation: slideRightToLeft 12s ease-in-out infinite;
+}
+
+.trending-item:nth-child(1) { animation-delay: 0s; }
+.trending-item:nth-child(2) { animation-delay: 1s; }
+.trending-item:nth-child(3) { animation-delay: 2s; }
+.trending-item:nth-child(4) { animation-delay: 3s; }
+.trending-item:nth-child(5) { animation-delay: 4s; }
+.trending-item:nth-child(6) { animation-delay: 5s; }
+.trending-item:nth-child(7) { animation-delay: 6s; }
+
+.author-item {
+    opacity: 0;
+    animation: slideRightToLeft 12s ease-in-out infinite;
+}
+
+.author-item:nth-child(1) { animation-delay: 0s; }
+.author-item:nth-child(2) { animation-delay: 1s; }
+.author-item:nth-child(3) { animation-delay: 2s; }
+.author-item:nth-child(4) { animation-delay: 3s; }
+.author-item:nth-child(5) { animation-delay: 4s; }
+.author-item:nth-child(6) { animation-delay: 5s; }
+.author-item:nth-child(7) { animation-delay: 6s; }
+
+.hero h1 {
+    font-family: 'Cinzel Decorative', serif; 
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+.nav-search button {
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #70492a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-search button:hover {
+    background-color: #472C1E;
+}
+
+.logout-button {
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #b14d4d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #8f3939;
+}
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-logo-img {
+    max-height: 40px; /* Adjust the height to fit your navbar */
+    max-width: 130px; /* Optional: Set a max width */
+    object-fit: contain; /* Ensures the logo scales proportionally */
+    display: block; /* Ensures the image is block-level for proper alignment */
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent navbar */
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #9f7966;
+}
+
+/* Search Bar in Navbar */
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+.nav-search button {
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #70492a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-search button:hover {
+    background-color: #472C1E;
+}
+
+
+/* logout button */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+.nav-search button {
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #70492a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-search button:hover {
+    background-color: #472C1E;
+}
+
+.logout-button {
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #b14d4d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #8f3939;
+}
+
+
+

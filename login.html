@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>Welcome</h1>
+            <form action="signup.php" method="POST" class="signup-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+
+                <div class="additional-links">
+                    <!-- <a href="#forgot-password" class="small-link">Forgot Password?</a>
+                    <span> | </span> -->
+                    <a href="signin.html" class="small-link">Sign In</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

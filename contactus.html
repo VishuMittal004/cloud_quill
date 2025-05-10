@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="full.html" class="nav-logo">
+                <img src="logo.png" alt="Cloud Quill Logo" class="nav-logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="full.html">Home</a></li>
+                <li><a href="booklist.html">Library</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+           
+        </div>
+    </nav>
+    <div class="overlay">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Have questions or want to get involved? We would love to hear from you. Reach out to us using the details below.</p>
+            
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Email: <a href="mailto:cloudquill24@gmail.com">cloudquill24@gmail.com</a></p>
+                <p>Phone: <a href="tel:+91120 2400973-976">+91120 2400973-976</a></p>
+                <p>Address: Jaypee Institute of Information technology, Noida sector-62, Gautam Buddha Nagar, Uttar Pradesh, India.</p>
+            </section>
+
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="http://localhost/dwb_project/contactus.php" method="POST">
+                    
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+            <section class="social-links">
+                <h2>Connect With Us</h2>
+                <p>Follow us on our social media handles to stay updated on our activities:</p>
+                <div class="links">
+                    <a href="https://www.facebook.com/profile.php?id=61569038858450" target="_blank">Facebook</a> 
+                    <a href="https://www.instagram.com/cloud_quill/" target="_blank">Instagram</a> 
+                    <a href="https://x.com/cloud_quill" target="_blank">X</a> 
+                    <a href="https://www.linkedin.com/in/cloud-quill-39562a33a/" target="_blank">LinkedIn</a>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 Cloud Quill. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

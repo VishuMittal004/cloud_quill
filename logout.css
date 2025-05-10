@@ -1,0 +1,23 @@
+/* Styling for the "Back to Home" button */
+.home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #70492a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #472C1E;
+}
+
+/* Paragraph styling */
+.container p {
+    font-size: 1em;
+    color: #ffffff;
+    margin-top: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Books</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <div class="content">
+                <h1>Donate Books to the Needy</h1>
+                <p>Fill in the details below to contribute to the community</p>
+            </div>
+            <form action="http://localhost/dwb_project/donations_connect.php" method="POST" class="donation-form">              
+                <div class="form-section">
+                    <h2>Your Information</h2>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Book Details</h2>
+                    <div class="form-group">
+                        <label for="book_title">Book Title</label>
+                        <input type="text" id="book_title" name="book_title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Author</label>
+                        <input type="text" id="author" name="author" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="genre">Genre</label>
+                        <input type="text" id="genre" name="genre">
+                    </div>
+                    <div class="form-group">
+                        <label for="condition">Condition (e.g., New, Like New, Used)</label>
+                        <input type="text" id="condition" name="condition" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description (Optional)</label>
+                        <textarea id="description" name="description" rows="3"></textarea>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-button">Submit Donation</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

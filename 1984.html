@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="aboutus.css"> 
+    <style>
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 100px;
+            padding: 20px;
+            background-color: rgba(106, 62, 36, 0.3);
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(2, 2, 2, 0.8);
+        }
+
+        .book-image {
+            flex: 1;
+            max-width: 300px;
+            margin-right: 20px;
+        }
+
+        .book-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .book-details {
+            flex: 2;
+            max-width: 600px;
+            color: #ffffff;
+        }
+
+        .book-details h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .book-details p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .book-buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .book-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #70492a;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .book-buttons a:hover {
+            background-color: #472C1E;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="full.html" class="nav-logo">
+                <img src="logo.png" alt="Cloud Quill Logo" class="nav-logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="full.html">Home</a></li>
+                <li><a href="booklist.html">Library</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <form action="search.php" class="nav-search">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="book-container">
+        <div class="book-image">
+            <img src="1984.jpg" alt="Book Cover">
+        </div>
+        <div class="book-details">
+            <h1>1984</h1>
+            <p><strong>Author:</strong> George Orwell</p>
+            <p><strong>Genre:</strong>  Fiction</p>
+            <p><strong>Summary:</strong> A dystopian novel set in a totalitarian regime led by "Big Brother," where individuality and freedom are suppressed. The story follows Winston Smith, who secretly rebels against the Party's oppressive rule.</p>
+            <p><strong>Price:</strong> Varies</p>
+            <div class="book-buttons">
+                <a href="https://www.flipkart.com/animal-farm-1984/p/itmfbyeabwwpfsuy" target="_blank">Buy Now</a>
+                <a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four" target="_blank">Visit Wikipedia</a>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
